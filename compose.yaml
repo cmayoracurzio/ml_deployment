@@ -1,0 +1,10 @@
+# One service called server.
+# Note that the "volumes" option make local development easy but can be removed in production.
+services:
+  server:
+    build:
+      context: .
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
